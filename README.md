@@ -3,7 +3,7 @@
 My car stereo supports playing mp3 files off of a USB thumbdrive. Unfortunately,
 it doesn't always sort files and folders alphabetically. Instead, it sorts them
 based on the order they were put onto the drive. Some internet searching reveals
-I am not the only person with this problem: [1], [2], [3] (and many others).
+I am not the only person with this problem: [1], [2], [3].
 
 This is a little script that I use to solve the problem. It's pretty simple and
 could be extended with more features and a GUI, etc. I just wanted to upload it
