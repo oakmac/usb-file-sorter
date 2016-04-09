@@ -1,0 +1,10 @@
+{
+  "author": "Chris Oakman <chris@oakmac.com> (http://chrisoakman.com/)",
+  "name": "usb-file-sorter",
+  "description": "Sort files and folders alphabetically on a USB drive.",
+  "license": "ISC",
+  "version": "0.0.1",
+  "dependencies": {
+    "fs-plus": "2.8.1"
+  }
+}
