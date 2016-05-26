@@ -1,10 +1,22 @@
 {
-  "author": "Chris Oakman <chris@oakmac.com> (http://chrisoakman.com/)",
   "name": "usb-file-sorter",
-  "description": "Sort files and folders alphabetically on a USB drive.",
-  "license": "ISC",
   "version": "0.0.1",
+  "description": "Sort files and folders alphabetically on a USB drive.",
+  "author": "Chris Oakman <chris@oakmac.com> (http://chrisoakman.com/)",
+  "license": "ISC",
+  "main": "app.js",
+  "bin": {
+    "usb-file-sorter": "./app.js"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/oakmac/usb-file-sorter"
+  },
   "dependencies": {
+    "commander": "^2.9.0",
     "fs-plus": "2.8.1"
+  },
+  "engines": {
+    "node": ">= 0.10"
   }
 }

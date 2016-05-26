@@ -1,6 +1,31 @@
-const fs = require('fs-plus');
+#!/usr/bin/env node
+'use strict';
 
-const sourcePath = '/media/oakmac/storage/Car USB/';
-const destPath = '/media/oakmac/C848-2D72/';
+var program = require('commander');
+var fs = require('fs-plus');
+var packageInfo = require('./package.json');
 
-fs.copySync(sourcePath, destPath);
+var source, destination;
+
+program
+  .version(packageInfo.version)
+  .description(packageInfo.description)
+  .usage('<source> <destination>')
+  .arguments('<source> <destination>')
+  .action(function(src, dest){
+    source = src;
+    destination = dest;
+  })
+  .parse(process.argv);
+
+// Show help text if no arguments are given
+if (!program.args.length) {
+    program.help();
+}
+
+if (!fs.existsSync(source)) {
+   console.error('The source does not exist');
+   process.exit(1);
+}
+
+fs.copySync(source, destination);
