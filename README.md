@@ -32,6 +32,7 @@ This list is of car stereo models that need the fix. Useful for SEO when people
 are searching for their model number.
 
 * Pioneer AVH-P2400BT
+* 2012 Honda Civic Factory Radio CD Player 39100-TR0-A81
 
 Send a PR or [open an issue] with your model number to add it to this list.
 
