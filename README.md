@@ -12,16 +12,33 @@ problem.
 
 ## Usage
 
-Install [Node.js].
+Install [Node.js]
 
+1. Create a backup of all of the files on your USB drive
 1. Delete all the files from your USB drive.
-2. Change `sourcePath` and `destPath` to appropriate folders for your computer.
-3. Run `node app.js` and wait as the files are copied over.
+1. Run `npm install` to install the required node packages
+1. Run `./app.js <sourcePath> <destinationPath>` with the appropriate folders and wait as the files are copied over.
+
+
+```
+$ ./app.js --help
+
+  Usage: app <source> <destination>
+
+  Sort files and folders alphabetically on a USB drive.
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+```
+
+This package can also be installed globally via `npm install -g` and run with the command `usb-file-sorter`.
 
 ## Future Features
 
+* Submit to npm
 * GUI
-* Pass command-line arguments instead of hard-coding constants
 * Do the re-ordering without having to delete everything and copying (I'm not
   sure if this is even possible, but would be worth looking into)
 * Visual feedback as the files are copied over

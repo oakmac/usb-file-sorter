@@ -1,2 +1,3 @@
 # ignore diff files
 *.diff
+node_modules
